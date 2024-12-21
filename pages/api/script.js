@@ -5,7 +5,6 @@ exports.handler = async (event) => {
   // Check if accessed via a web browser
   if (userAgent && userAgent.includes('Mozilla')) {
     return {
-      statusCode: 200,
       headers: {
         'Content-Type': 'text/html',
       },
@@ -112,7 +111,6 @@ exports.handler = async (event) => {
 
   // Serve Lua code for Roblox HTTP Requests
   return {
-    statusCode: 200,
     headers: {
       'Content-Type': 'text/plain',
     },
