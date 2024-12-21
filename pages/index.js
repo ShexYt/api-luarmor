@@ -1,3 +1,7 @@
+import Head from 'next/head'
+import Header from '@components/Header'
+import Footer from '@components/Footer'
+
 export default function Home() {
   return (
     <div className="container">
@@ -6,14 +10,20 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1>This script is protected!</h1>
-        <p>Copy and paste the following code:</p>
-        <pre>
-          loadstring(game:HttpGet("https://luarmor.netlify.app/api/script?token=yourSecretKey"))()
-        </pre>
-        <p>Do not share your token!</p>
+        <Header title="This script is free , why u tryna skid!" />
+        <p className="description">
+          stop being   <code>dawg</code>
+        </p>
+
+        <p>
+          Load this script using:
+          <pre>
+            loadstring(game:HttpGet("https://luarmor.netlify.app/api/COCK"))()
+          </pre>
+        </p>
       </main>
- 
-   </div>
+
+      <Footer />
+    </div>
   )
 }
