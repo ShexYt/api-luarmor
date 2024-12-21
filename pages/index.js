@@ -1,22 +1,19 @@
-import Head from 'next/head'
-import Header from '@components/Header'
-import Footer from '@components/Footer'
-
 export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>why are u here nigger</title>
+        <title>why are u here</title>
       </Head>
 
       <main>
-        <Header title="This script is free nigga, why u tryna skid!" />
-        <p className="description">
-          stop being  nigga <code>dawg</code>
-        </p>
+        <h1>This script is protected!</h1>
+        <p>Copy and paste the following code:</p>
+        <pre>
+          loadstring(game:HttpGet("https://luarmor.netlify.app/api/script?token=yourSecretKey"))()
+        </pre>
+        <p>Do not share your token!</p>
       </main>
-
-      <Footer />
-    </div>
+ 
+   </div>
   )
 }
