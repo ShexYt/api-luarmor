@@ -39,9 +39,6 @@ export default function handler(req, res) {
     v7()
   `;
   
-  // Base64 encode the Lua script
-  const encodedCode = Buffer.from(luaCode).toString('base64'); 
-
   res.setHeader('Content-Type', 'text/plain');
-  res.status(200).send(`loadstring(game:GetService("HttpService"):Base64Decode("${encodedCode}"))()`);
+  res.status(200).send(luaCode);
 }
